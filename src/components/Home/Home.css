@@ -1,0 +1,18 @@
+.homeSection {
+   top: 10%;
+   left: 50%;
+   transform: translate(-50%, 100%);
+}
+.homeSection > h1 {
+   font-size: 12rem;
+   font-weight: 400;
+   color: #fff;
+}
+.homeSection > p {
+   letter-spacing: 1.5px;
+   color: #fff;
+
+   position: absolute;
+   top: 84.5%;
+   left: 1%;
+}

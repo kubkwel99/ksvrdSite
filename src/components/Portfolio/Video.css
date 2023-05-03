@@ -1,0 +1,159 @@
+.articleDiv {
+   background: #000;
+   width: 100%;
+   box-sizing: border-box;
+   margin: auto;
+
+}
+.headerText {
+   padding-top: 10rem;
+   color: white;
+}
+.containerDiv {
+   display: flex;
+   flex-wrap: wrap;
+   align-items: center;
+   justify-content: flex-start;
+   max-width: 916px;
+   min-width: 320px;
+   margin: auto;
+   gap: 0.5rem;
+   padding: 1rem 0rem;
+   border-top: 1px solid white;
+   padding-bottom: 10rem;
+}
+
+.wrapperDiv > video {
+   height: 320px;
+   border-radius: 0;
+   
+}
+
+.popUp {
+   position: fixed;
+   top: 0;
+   left: 50%;
+   transform: translate(-50%, 20%);
+   backdrop-filter: blur(8px);
+   max-width: 1308px;
+   height: auto;
+   background-color: rgba(0, 0, 0, 0.88);
+   display: flex;
+   flex-direction: row;
+   justify-content: stretch;
+   /* align-items: center; */
+   box-shadow: 0 7px 6px -2px rgb(0, 0, 0);
+   border-radius: 0;
+   z-index: 99;
+   transition: all 300ms ease-in-out;
+}
+.popUp > button {
+   position: absolute;
+   top: 1%;
+   right: 1%;
+   font-size: 1.5rem;
+}
+/* .popUp > VideoPlayer {
+   height: 900px;
+   width: 500px;
+   border-radius: 0;
+   box-shadow: none;
+} */
+
+.popUpInfo{
+   color: white;
+
+}
+
+.popup h2 {
+   font-size: 1.5rem;
+   margin-top: 0;
+ }
+ 
+ .popup p {
+   margin-top: 0;
+ }
+
+.closePopUp {
+   position: fixed;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   z-index: 98;
+}
+.text-left{
+   width: 33%;
+   
+}
+
+@media screen and (max-width: 928px) {
+   .wrapperDiv > video {
+      height: 230px;
+      width: auto;
+      transition: all 300ms ease-in-out;
+   }
+   .containerDiv{
+       max-width: 706px;
+       transition: all 300ms ease-in-out
+   }
+   .popUp{
+      top: 9%;
+      width: 706px;
+      height: auto;
+   }
+   .popUp > video {
+      height: auto;
+      width: 320px;
+   }
+   .text-white{
+      margin: 1rem !important;
+   }
+
+}
+
+@media screen and (max-width: 706px) {
+   .wrapperDiv > video {
+      height: 143px;
+      width: auto;
+      transition: all 300ms ease-in-out;
+   }
+   .containerDiv{
+       max-width: 445px;
+       transition: all 300ms ease-in-out
+   }
+   .popUp{
+      width: 300px;
+      height: 700px;
+      flex-direction: column;
+   }
+   .text-white{
+      margin: 1rem ;
+   }
+   .text-white h2{
+      font-size: 1.2rem !important;
+   }
+   .text-white p{
+      font-size: 0.9rem !important;
+   }
+}
+
+@media screen and (max-width: 445px) {
+   .wrapperDiv > video {
+      height: 101px;
+      width: auto;
+      transition: all 300ms ease-in-out;
+   }
+   .containerDiv{
+       max-width: 320px;
+       transition: all 300ms ease-in-out;
+   }
+
+}
+.hide-overflow {
+   overflow: hidden;
+ }
+ 
